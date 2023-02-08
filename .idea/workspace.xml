@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14e074a8-21a2-4371-919b-d6a5e57781c8" name="Changes" comment="bug fixes, implemented torch.cuda.amp on trainer, changed flair embedding to bert-WordTransformer">
+      <change beforePath="$PROJECT_DIR$/OIE/train_output/PTOIE/best-model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OIE/train_output/PTOIE/dev.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OIE/train_output/PTOIE/final-model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OIE/train_output/PTOIE/loss.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OIE/train_output/PTOIE/test.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OIE/train_output/PTOIE/training.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OIE/train_output/PTOIE/weights.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="def97b1a-a65d-4c99-b2c8-2eb7713c53ef" />
+        <option name="url" value="https://github.com/alanrios2001/PTOIE.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LCXL41erA3UPXiL92BBvo4ajpe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Dev/3-facul/PIBIC/PLN/Flair-oie/OIE/trainers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Dev\3-facul\PIBIC\PLN\Flair-oie\OIE\trainers" />
+      <recent name="E:\Dev\3-facul\PIBIC\PLN\Flair-oie\OIE\datasets\saida_match" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dev\3-facul\PIBIC\PLN\Flair-oie" />
+      <recent name="E:\Dev\3-facul\PIBIC\PLN\Flair-oie\OIE\train_output" />
+      <recent name="E:\Dev\3-facul\PIBIC\PLN\Flair-oie\OIE\datasets" />
+      <recent name="E:\Dev\3-facul\PIBIC\PLN\Flair-oie\OIE\resources" />
+      <recent name="E:\Dev\3-facul\PIBIC\PLN\Flair-oie\OIE" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="eval" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Flair-oie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OIE" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OIE/eval.py" />
+      <option name="PARAMETERS" value="train_output/teste_amp_context datasets/saida_match PTOIE_train.txt PTOIE_test.txt PTOIE_dev.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Flair-oie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OIE/datasets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OIE/datasets/main.py" />
+      <option name="PARAMETERS" value="PTOIE 0.1 0.1 saida_match/json_dump.json &quot;PTOIE/PTOIE.txt&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="predict" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Flair-oie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OIE" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OIE/predict.py" />
+      <option name="PARAMETERS" value="teste_amp &quot;Os cachorros, que são mamíferos, são os melhores amigos do homem.&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Flair-oie" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OIE" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OIE/train.py" />
+      <option name="PARAMETERS" value="150 teste_amp datasets/saida_match PTOIE_train.txt PTOIE_test.txt PTOIE_dev.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.train" />
+      <item itemvalue="Python.predict" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.eval" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14e074a8-21a2-4371-919b-d6a5e57781c8" name="Changes" comment="" />
+      <created>1675375980386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675375980386</updated>
+      <workItem from="1675375982596" duration="5766000" />
+      <workItem from="1675384030806" duration="1259000" />
+      <workItem from="1675450517464" duration="33000" />
+      <workItem from="1675450558620" duration="17786000" />
+      <workItem from="1675485612526" duration="10365000" />
+      <workItem from="1675533864431" duration="4964000" />
+      <workItem from="1675582913191" duration="1730000" />
+      <workItem from="1675622452613" duration="3412000" />
+      <workItem from="1675628760667" duration="1237000" />
+      <workItem from="1675642296365" duration="1621000" />
+      <workItem from="1675647462184" duration="35000" />
+      <workItem from="1675736151862" duration="4355000" />
+      <workItem from="1675740869447" duration="880000" />
+      <workItem from="1675741769605" duration="223000" />
+      <workItem from="1675781077628" duration="2038000" />
+      <workItem from="1675785983013" duration="1700000" />
+      <workItem from="1675787853121" duration="9156000" />
+      <workItem from="1675800992773" duration="1672000" />
+      <workItem from="1675802763010" duration="1296000" />
+      <workItem from="1675807777913" duration="1476000" />
+      <workItem from="1675809277119" duration="1659000" />
+      <workItem from="1675811220751" duration="48000" />
+      <workItem from="1675811554015" duration="954000" />
+      <workItem from="1675812553301" duration="817000" />
+      <workItem from="1675813840521" duration="27000" />
+      <workItem from="1675813876878" duration="47000" />
+      <workItem from="1675813987033" duration="318000" />
+      <workItem from="1675815350168" duration="138000" />
+      <workItem from="1675815496629" duration="43000" />
+      <workItem from="1675815654413" duration="1427000" />
+      <workItem from="1675817119598" duration="210000" />
+      <workItem from="1675817469699" duration="618000" />
+      <workItem from="1675818662744" duration="523000" />
+      <workItem from="1675819406241" duration="392000" />
+      <workItem from="1675820067548" duration="177000" />
+      <workItem from="1675820735187" duration="911000" />
+      <workItem from="1675821882282" duration="110000" />
+      <workItem from="1675822055104" duration="7734000" />
+      <workItem from="1675831076407" duration="168000" />
+      <workItem from="1675831637998" duration="3002000" />
+    </task>
+    <task id="LOCAL-00001" summary="fixed custom embedding missing">
+      <created>1675452641235</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675452641235</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changed standart optimizer on training to MADGRAD">
+      <created>1675459658591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675459658591</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Improved command inputs">
+      <created>1675463713050</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675463713050</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Improved Model trainer, model, and predict.">
+      <created>1675495409277</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675495409277</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Improved Model trainer, model, and predict.">
+      <created>1675495635324</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675495635324</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Improved predict">
+      <created>1675497315765</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675497315765</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Improved predict">
+      <created>1675498998968</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675498998968</updated>
+    </task>
+    <task id="LOCAL-00008" summary="eval script created">
+      <created>1675628646827</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675628646827</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added eval script">
+      <created>1675628706868</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675628706868</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added eval">
+      <created>1675628867760</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675628867760</updated>
+    </task>
+    <task id="LOCAL-00011" summary="updated eval">
+      <created>1675629297087</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675629297087</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added trained model">
+      <created>1675740727543</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675740727543</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added trained model">
+      <created>1675741031323</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675741031323</updated>
+    </task>
+    <task id="LOCAL-00014" summary="improved eval">
+      <created>1675741899539</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675741899539</updated>
+    </task>
+    <task id="LOCAL-00015" summary="bug fixes, implemented torch.cuda.amp on trainer, changed flair embedding to bert-WordTransformer">
+      <created>1675834584994</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675834584994</updated>
+    </task>
+    <task id="LOCAL-00016" summary="bug fixes, implemented torch.cuda.amp on trainer, changed flair embedding to bert-WordTransformer">
+      <created>1675834904266</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675834904266</updated>
+    </task>
+    <task id="LOCAL-00017" summary="bug fixes, implemented torch.cuda.amp on trainer, changed flair embedding to bert-WordTransformer">
+      <created>1675834961825</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1675834961825</updated>
+    </task>
+    <task id="LOCAL-00018" summary="bug fixes, implemented torch.cuda.amp on trainer, changed flair embedding to bert-WordTransformer">
+      <created>1675835239570</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1675835239570</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="fixed custom embedding missing" />
+    <MESSAGE value="changed standart optimizer on training to MADGRAD" />
+    <MESSAGE value="Improved command inputs" />
+    <MESSAGE value="Improved Model trainer, model, and predict." />
+    <MESSAGE value="Improved predict" />
+    <MESSAGE value="eval script created" />
+    <MESSAGE value="added eval script" />
+    <MESSAGE value="added eval" />
+    <MESSAGE value="updated eval" />
+    <MESSAGE value="added trained model" />
+    <MESSAGE value="improved eval" />
+    <MESSAGE value="bug fixes, implemented torch.cuda.amp on trainer, changed flair embedding to bert-WordTransformer" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes, implemented torch.cuda.amp on trainer, changed flair embedding to bert-WordTransformer" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Flair_oie$merge_datasets.coverage" NAME="merge_datasets Coverage Results" MODIFIED="1675533932144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OIE/datasets" />
+    <SUITE FILE_PATH="coverage/Flair_oie$conll2bioes.coverage" NAME="conll2bioes Coverage Results" MODIFIED="1675629497857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OIE/datasets" />
+    <SUITE FILE_PATH="coverage/Flair_oie$test.coverage" NAME="test Coverage Results" MODIFIED="1675810515799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Flair_oie$train.coverage" NAME="train Coverage Results" MODIFIED="1675832262059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OIE" />
+    <SUITE FILE_PATH="coverage/Flair_oie$setup.coverage" NAME="setup Coverage Results" MODIFIED="1675810591929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apex" />
+    <SUITE FILE_PATH="coverage/Flair_oie$lower_dataset.coverage" NAME="lower_dataset Coverage Results" MODIFIED="1675533939862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OIE/datasets" />
+    <SUITE FILE_PATH="coverage/Flair_oie$criar_corpus.coverage" NAME="criar_corpus Coverage Results" MODIFIED="1675642973787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OIE/datasets" />
+    <SUITE FILE_PATH="coverage/Flair_oie$eval.coverage" NAME="eval Coverage Results" MODIFIED="1675833775426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OIE" />
+    <SUITE FILE_PATH="coverage/Flair_oie$main.coverage" NAME="main Coverage Results" MODIFIED="1675834378685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OIE/datasets" />
+    <SUITE FILE_PATH="coverage/Flair_oie$predict.coverage" NAME="predict Coverage Results" MODIFIED="1675833865925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OIE" />
+  </component>
+</project>
